@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lane Four Goods: vintage swim club sweatshirts, tees and hoodies for swimmers and swim moms. Made to order on Etsy.">
+<meta property="og:title" content="Lane Four Goods">
+<meta property="og:description" content="Clothes for the people who were at the pool before sunrise. Made to order on Etsy.">
+<meta property="og:image" content="https://lanefourgoods.github.io/images/C01.jpg">
+<title>Lane Four Goods</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Courier+Prime&display=swap">
+<style>
+/* Layout: a quiet club-house page. Masthead wordmark, one line of thesis, a catalogue grid of pieces, the club rules, then the door to the Etsy shop. */
+:root{
+ --paper:#F3EEE3; --paper-2:#E9E2D3; --ink:#1F2F4A; --ink-soft:#4B5A73; --cocoa:#4A3226; --rule:#CFC5B2;
+ --btn-fg:#F5F0E4;
+ --display:"Graduate","Rockwell","Georgia",serif;
+ --body:"Libre Caslon Text","Georgia","Times New Roman",serif;
+ --mono:"Courier Prime","Courier New",monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141D2E;--paper-2:#1B263A;--ink:#EFE8DA;--ink-soft:#B4BCCB;--cocoa:#D2B49C;--rule:#33415A;--btn-fg:#141D2E;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#141D2E;--paper-2:#1B263A;--ink:#EFE8DA;--ink-soft:#B4BCCB;--cocoa:#D2B49C;--rule:#33415A;--btn-fg:#141D2E;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:20px}
+.wrap{max-width:1080px;margin-inline:auto}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--cocoa);outline-offset:3px}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);flex-wrap:wrap}
+header.top a{text-decoration:none}
+.hero{padding-block:72px 56px;text-align:center;display:grid;gap:18px;justify-items:center}
+.est{font-family:var(--mono);font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--cocoa)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(46px,10vw,112px);line-height:.92;letter-spacing:.01em;margin:0;text-wrap:balance}
+.sub{font-style:italic;font-size:clamp(18px,2.4vw,22px);max-width:34ch;margin:0;text-wrap:balance;color:var(--ink-soft)}
+.lane{width:min(420px,80%);height:10px;margin-block:8px;background:repeating-linear-gradient(90deg,var(--ink) 0 14px,transparent 14px 22px);opacity:.75}
+.btn{display:inline-block;background:var(--ink);color:var(--btn-fg);text-decoration:none;font-family:var(--mono);font-size:14px;letter-spacing:.16em;text-transform:uppercase;padding:15px 26px;border-radius:2px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+section{padding-block:56px;border-top:1px solid var(--rule)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,4vw,36px);margin:0;letter-spacing:.02em}
+.kicker{font-family:var(--mono);font-size:13px;color:var(--ink-soft);letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px}
+.card{margin:0;display:grid;gap:10px}
+.card img{width:100%;aspect-ratio:600/363;object-fit:cover;display:block;border-radius:2px}
+figcaption{display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.n{font-weight:700} .t{font-family:var(--mono);font-size:13px;color:var(--ink-soft);white-space:nowrap}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.rule h3{font-family:var(--mono);font-weight:400;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--cocoa);margin:0 0 8px}
+.rule p{margin:0;max-width:40ch}
+.door{background:var(--paper-2);text-align:center;padding:56px 24px;display:grid;gap:18px;justify-items:center;border-radius:2px}
+.door p{margin:0;max-width:44ch}
+footer{padding-block:32px 48px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:13px;color:var(--ink-soft)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><span>L4 &middot; Lane Four Goods</span><a href="https://www.etsy.com/shop/LaneFourGoods">Shop on Etsy &rarr;</a></header>
+<div class="hero">
+ <span class="est">Est. Lane Four</span>
+ <h1>Lane Four<br>Goods</h1>
+ <div class="lane" aria-hidden="true"></div>
+ <p class="sub">Clothes for the people who were at the pool before sunrise. You'd wear them anyway.</p>
+ <a class="btn" href="https://www.etsy.com/shop/LaneFourGoods">Shop the collection</a>
+</div>
+<section id="collection">
+ <div class="head"><h2>The Collection</h2><span class="kicker">Fall training season</span></div>
+ <div class="grid"><figure class="card"><img src="images/C01.jpg" alt="Lane Four Swim Club design" loading="lazy"><figcaption><span class="n">Lane Four Swim Club</span><span class="t">Oversized crew</span></figcaption></figure>
+<figure class="card"><img src="images/C10.jpg" alt="Morning Practice Club design" loading="lazy"><figcaption><span class="n">Morning Practice Club</span><span class="t">Heavyweight tee</span></figcaption></figure>
+<figure class="card"><img src="images/C03.jpg" alt="Taper Season design" loading="lazy"><figcaption><span class="n">Taper Season</span><span class="t">Hoodie</span></figcaption></figure>
+<figure class="card"><img src="images/C04.jpg" alt="Chlorine &amp; Co. design" loading="lazy"><figcaption><span class="n">Chlorine &amp; Co.</span><span class="t">Relaxed tee</span></figcaption></figure>
+<figure class="card"><img src="images/C09.jpg" alt="Goggle Tan Club design" loading="lazy"><figcaption><span class="n">Goggle Tan Club</span><span class="t">Left-chest crew</span></figcaption></figure>
+<figure class="card"><img src="images/C02.jpg" alt="4:45 a.m. Society design" loading="lazy"><figcaption><span class="n">4:45 a.m. Society</span><span class="t">Washed navy tee</span></figcaption></figure>
+<figure class="card"><img src="images/C07.jpg" alt="Distance Club 1650 design" loading="lazy"><figcaption><span class="n">Distance Club 1650</span><span class="t">Crewneck</span></figcaption></figure>
+<figure class="card"><img src="images/C06.jpg" alt="On Deck design" loading="lazy"><figcaption><span class="n">On Deck</span><span class="t">Hoodie</span></figcaption></figure>
+<figure class="card"><img src="images/L01.jpg" alt="L4 Club Emblem design" loading="lazy"><figcaption><span class="n">L4 Club Emblem</span><span class="t">Left-chest mark</span></figcaption></figure></div>
+</section>
+<section id="club">
+ <div class="head"><h2>Club Rules</h2><span class="kicker">Members only, loosely enforced</span></div>
+ <div class="rules">
+  <div class="rule"><h3>Garments first</h3><p>Oversized crews, heavyweight tees and soft hoodies in oatmeal, heather, washed navy and chocolate. Picked because they drape well, not because a screen printer likes them.</p></div>
+  <div class="rule"><h3>One ink, quietly</h3><p>Deep navy, cream or chocolate. No glitter, no mascots, no team colours shouting across the parking lot.</p></div>
+  <div class="rule"><h3>Inside reference</h3><p>Taper, heat sheets, goggle marks, the 1650. If you know, you know. If you don't, it still looks good with jeans.</p></div>
+ </div>
+</section>
+<section>
+ <div class="door">
+  <span class="est">Made to order</span>
+  <h2>Pick yours on Etsy</h2>
+  <p>Every piece is printed when you order it and ships from our print partner, so nothing sits in a warehouse.</p>
+  <a class="btn" href="https://www.etsy.com/shop/LaneFourGoods">Visit the Etsy shop</a>
+ </div>
+</section>
+<footer><span>&copy; 2026 Lane Four Goods</span><span>Heat 3, Lane 4. See you on deck.</span></footer>
+</div>
+</body>
+</html>
